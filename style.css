@@ -1,0 +1,64 @@
+body{
+    background-image: url('https://img.freepik.com/vector-premium/fondo-borroso-abstracto-color-pastel-fondo-pantalla-colorido_592487-764.jpg');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 500;
+    padding: 80px;
+}
+form{
+    background-color: #29435c41;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    form:hover{
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+}
+}
+input[type="text"] {
+    transition: background-color 3s;
+    border-radius: 6cap;
+    background-color: #f0c8e59d;
+}
+
+input[type="text"]:focus {
+    border-radius: 6cap;
+    background-color: #f0c8e59d;
+    transition: backgrrgb(244, 202, 229)lor 3s;
+}
+textarea,
+select[name="curso"] {
+    border-radius: 8px;
+    background-color: #c5f9f8ae;
+    transition: background-color 3s;
+}
+textarea,
+select[name="cars"] {
+    border-radius: 8px;
+    background-color: #b4eaf782;
+    transition: background-color 3s;
+}
+button,
+select[name="button"] {
+    border-radius: 8px;
+    background-color: #b3c2dd;
+    transition: background-color 3s;
+}
+img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;

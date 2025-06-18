@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HT2: Formularios con HTML y CSS</title>
+</head>
+<body>
+    <header>
+        
+        </form>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Formulario</legend>
+    <form action="">
+            <h1>Formularios con HTML y CSS</h1>
+<section>
+    <div class="container mt-5">
+        <section id="inicio" class="row mt-4">
+            <div class="col-md-12 text-center">
+                <label for="profile-img-input" style="cursor:pointer;">
+                    <img id="profile-img" src="https://images.icon-icons.com/3446/PNG/512/account_profile_user_avatar_icon_219236.png" class="img-fluid rounded-circle" width="30px" alt="Avatar">
+                    <input type="file" id="profile-img-input" accept="image/*" style="display:none" onchange="changeProfileImg(event)">
+                </label>
+                <script>
+                function changeProfileImg(event) {
+                    const input = event.target;
+                    if (input.files && input.files[0]) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            document.getElementById('profile-img').src = e.target.result;
+                        }
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+                </script></label>
+            </div>
+</section>
+            <label for="fname">Nombre</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <br>
+
+            <label for="fname">Correo Electrónico</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <br>
+            <label for="cars">Curso</label>
+            <br>
+            <select id="cars" name="cars">
+            <option value="volvo">HTML</option>
+            <option value="saab">CSS</option>
+            <option value="fiat">JavaScript</option>
+            <option value="audi">C++</option>
+            </select>
+            <br>
+            <br>
+            <label for="cars">Comentarios</label>
+            <br>
+            <textarea name="message" style="width:200px; height:200px;">
+            Ingrese su mensaje aquí...
+            </textarea>
+            <br><br>
+            <button name= "button" type="button" onclick="alert('Tu comentario fue enviado con exito')">Enviar</button>
+        </form>    
+  </fieldset>
+</form>
+    </header>
+</body>
+</html>
